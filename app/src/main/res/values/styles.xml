@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--Định dạng size cho text mật khẩu-->
+    <style name="textTaiKhoanMK.kichthuoc">     <!--Dạng kế thừa 1-->
+        <item name="android:textSize">@dimen/kich_thuoc_text</item>
+
+    </style>
+    <!-- Định dạng 2 textview cho text taikhoan matkhau-->
+    <style name="textTaiKhoanMK">
+
+        <item name="android:background">#ff00</item>
+        <item name="android:textColor">#ff0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <!-- Định dạng 2 button cho đăng ký và đăng nhập-->
+    <style name="textButton">
+        <item name="android:background">#ff00</item>
+        <item name="android:textColor">#ff0</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/textMatKhau</item>
+    </style>
+
+    <!-- Định dạng màu nên cho button đăng nhập-->
+    <style name="mau_nen_buttonDN" parent="textButton"> <!-- dạng Kế thừa 2 style mình cần-->
+        <item name="android:background">#3c6bed</item>
+
+    </style>
+
+</resources>

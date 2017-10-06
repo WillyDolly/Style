@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.thanhtam.style.MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/TitleForm"
+       android:textColor="#ff1500"
+       android:gravity="center_horizontal"
+       android:textSize="30dp"
+       android:text="Đăng nhập hệ thống"/>
+
+
+ <TextView
+        style="@style/textTaiKhoanMK"
+
+        android:id="@+id/textTaiKhoan"
+
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/TitleForm"
+        android:text="Tài khoản:"
+         />
+    <EditText
+        android:id="@+id/editTextTaiKhoan"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/textTaiKhoan"
+        android:layout_below="@id/TitleForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/textTaiKhoanMK.kichthuoc"
+
+        android:id="@+id/textMatKhau"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textTaiKhoan"
+        android:text="Mật khẩu:"
+        />
+    <EditText
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/EditTextMatKhau"
+        android:layout_toRightOf="@id/textMatKhau"
+        android:layout_below="@id/textTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/mau_nen_buttonDN"
+
+        android:id="@+id/ButtonDangNhap"
+        android:text="Đăng nhập"
+        android:layout_marginLeft="60dp"/>
+
+    <Button
+        style="@style/textButton"
+        android:textColor="#00ff00"
+        android:id="@+id/ButtonDangKy"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/ButtonDangNhap"
+        android:text="Đăng ký"
+         />
+</RelativeLayout>
